@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  color: cyan;
+}
+
+.start_2020 {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.start_2020 [class*="stbg"] {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 170, 70, 0.5)), color-stop(rgba(10, 170, 70, 0.5)), to(rgba(10, 170, 70, 0.5))), url("../img/snow.png");
+  background: linear-gradient(rgba(10, 170, 70, 0.5), rgba(10, 170, 70, 0.5), rgba(10, 170, 70, 0.5)), url("../img/snow.png");
+  -webkit-animation: 20s linear stbg infinite;
+          animation: 20s linear stbg infinite;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: color-dodge;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.start_2020 .stbg2 {
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  animation-direction: reverse;
+}
+
+.start_2020 .stbg3 {
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+}
+
+@-webkit-keyframes stbg {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 500px;
+  }
+}
+
+@keyframes stbg {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 500px;
+  }
+}
+
+.effect_list {
+  z-index: 22222222222222222;
+  color: #222;
+  font-size: 4em;
+  font-weight: bolder;
+  font-family: sans-serif;
+  text-shadow: -1px 1px white, -2px 2px white, -3px 3px white, -4px 4px white;
+}
+
+.e_2019 {
+  text-align: center;
+}
+
+.e_2019 span {
+  -webkit-animation: backwards 4s linear e_2019, st infinite 3s linear;
+          animation: backwards 4s linear e_2019, st infinite 3s linear;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.e_2019 span:nth-of-type(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.e_2019 span:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.e_2019 span:nth-of-type(4) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes e_2019 {
+  0% {
+    opacity: 0;
+    font-size: 0px;
+  }
+  70%, 100% {
+    font-size: 60px;
+    opacity: 1;
+  }
+}
+
+@keyframes e_2019 {
+  0% {
+    opacity: 0;
+    font-size: 0px;
+  }
+  70%, 100% {
+    font-size: 60px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes st {
+  0% {
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+  }
+  100% {
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
+  }
+}
+
+@keyframes st {
+  0% {
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+  }
+  100% {
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
+  }
+}
+
+.project {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  color: white;
+  background: #222;
+  padding: 5px;
+  z-index: 333333333333333333333333;
+}
+/*# sourceMappingURL=style.css.map */

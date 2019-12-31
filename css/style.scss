@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin position-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin default-transform{
+    transform: translate(0,0,0) rotate(0,0,0) scale(1) skew(0deg);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    color: cyan;
+}
+// start 2020
+.start_2020{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    @include flex-center;
+    [class*="stbg"]{
+        background: linear-gradient(rgba(10, 170, 70,0.5),rgba(10, 170, 70,0.5),rgba(10, 170, 70,0.5)), url('../img/snow.png') ;
+        animation: 20s linear stbg infinite;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: color-dodge;
+        @include position-center;
+
+       
+    }
+    .stbg2{
+        animation-duration: 40s;
+        animation-direction: reverse;
+
+        
+    }
+    .stbg3{
+        animation-duration: 60s;
+    }
+}
+
+
+@keyframes stbg{
+    0%{
+        background-position: 0px 0px;
+
+    }
+    100%{
+
+        background-position: 0px 500px;
+    }
+    
+}
+.effect_list{
+    z-index: 22222222222222222;
+    color: #222;
+    font: {
+        size: 4em;
+        weight: bolder;
+        family: sans-serif;
+    }
+    text-shadow: -1px 1px white,
+                  -2px 2px white,
+                  -3px 3px white,
+                  -4px 4px white;
+}
+.e_2019{
+    text-align: center;
+    span{
+        animation: backwards 4s linear e_2019, st infinite 3s linear;
+        display: block;
+        width: 100%;
+        text-align: center;
+        &:nth-of-type(2){
+            animation-delay: 1s;
+        }
+        &:nth-of-type(3){
+            animation-delay: 2s;
+        }
+        &:nth-of-type(4){
+            animation-delay: 3s;
+        }
+
+    }
+    @keyframes e_2019 {
+        0%{
+            opacity: 0;
+            font-size: 0px;
+        }
+        70%,100%{
+            font-size: 60px;
+            opacity: 1;
+        }
+    }
+    @keyframes st{
+        0%{
+            transform: skew(10deg);
+        }
+        100%{
+            transform: skew(-10deg);
+        }
+    }
+}
+.project{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    color: white;
+    background: #222;
+    padding: 5px;
+    z-index: 333333333333333333333333;
+}
